@@ -6,12 +6,16 @@
   height: 230px;
   background-color: #e1e1e1;
   border-radius: 5px;
-  box-shadow: rgb(200 200 200 / 70%) 0px 2px 8px;
-  padding-inline: 5px;
+  box-shadow: rgba(0, 0, 0, 0.589) 0px 1px 5px;
+  // border: solid 1px #cdcdcd;
+  padding: 3px;
 }
 .card-header-icon {
+  font-size: 30px;
+  display: flex;
+  align-items: baseline;
   img {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 
@@ -19,19 +23,30 @@
   flex: 1;
 }
 .card-body {
-  flex: 5;
+  flex: 8 1;
+  font-size: small;
+  border: solid 1px #d3d1d1;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 2px;
 }
 .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   flex: 1;
 }
 .card-footer-date {
   font-size: small;
 }
 
+.card-footer-like {
+  cursor: pointer;
+}
+
 .card-footer-comment {
   margin-inline: 5px;
+  cursor: pointer;
 }
 .card-footer :nth-child(1) {
   display: flex;
